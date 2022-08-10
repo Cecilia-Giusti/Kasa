@@ -17,11 +17,16 @@ const GlobalStyle = createGlobalStyle`
         text-decoration:none;
     }
 
+    h1 {
+        font-family: 'Montserrat', "Arial", "Sans-serif";
+        font-style: normal;
+        font-weight: 500;
+        margin-block-start :0px;
+        margin-block-end:0px;
+    }
+
 }
 
-@media (max-width: 375px) {
-   
-  }
 `;
 
 export default GlobalStyle;
