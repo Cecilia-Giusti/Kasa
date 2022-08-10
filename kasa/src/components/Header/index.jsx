@@ -62,9 +62,6 @@ const Ul = styled.ul`
 const Li = styled.li`
   @media all {
     color: ${colors.primary};
-    font-family: "Montserrat", "Arial", "Sans-serif";
-    font-style: normal;
-    font-weight: 500;
     font-size: 24px;
     line-height: 142.6%;
     list-style: none;
