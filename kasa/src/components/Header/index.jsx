@@ -5,15 +5,23 @@ import colors from "../../utils/style/colors";
 
 const HeaderContent = styled.header`
   @media all {
+    width: 86.11%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
     align-items: center;
+    padding-bottom: 6%;
+  }
+
+  @media (max-width: 600px) {
+    width: 89.33%;
+    padding-top: 20px;
+    padding-bottom: 2%;
   }
   @media (max-width: 375px) {
     padding-top: 20px;
-    width: 100%;
+    width: 89.33%;
   }
 `;
 
@@ -21,6 +29,11 @@ const Logo = styled.img`
   @media all {
     width: 210.32px;
     height: 68px;
+  }
+
+  @media (max-width: 600px) {
+    width: 170px;
+    height: 55px;
   }
 
   @media (max-width: 375px) {
@@ -35,6 +48,10 @@ const Ul = styled.ul`
   @media all {
     display: flex;
     gap: 57px;
+  }
+
+  @media (max-width: 600px) {
+    gap: 20px;
   }
 
   @media (max-width: 375px) {
@@ -54,6 +71,14 @@ const Li = styled.li`
     &:hover {
       text-decoration-line: underline;
     }
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 14px;
   }
 
   @media (max-width: 375px) {

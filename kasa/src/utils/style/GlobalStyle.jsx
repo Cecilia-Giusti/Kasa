@@ -4,7 +4,7 @@ import colors from "./colors";
 const GlobalStyle = createGlobalStyle`
 @media all {
     body {
-        width:90%;
+        width:100%;
         background-color : ${colors.backgroundBody}
         font-family: 'Montserrat', "Arial", "Sans-serif";
         font-style: normal;
