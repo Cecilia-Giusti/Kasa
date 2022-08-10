@@ -11,17 +11,13 @@ const HeaderContent = styled.header`
     justify-content: space-between;
     padding-top: 40px;
     align-items: center;
-    padding-bottom: 6%;
+    padding-bottom: 4%;
   }
 
   @media (max-width: 600px) {
     width: 89.33%;
     padding-top: 20px;
     padding-bottom: 2%;
-  }
-  @media (max-width: 375px) {
-    padding-top: 20px;
-    width: 89.33%;
   }
 `;
 
@@ -61,6 +57,7 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   @media all {
+    font-family: "Montserrat", "Arial", "Sans-serif";
     color: ${colors.primary};
     font-size: 24px;
     line-height: 142.6%;
@@ -72,6 +69,7 @@ const Li = styled.li`
 
   @media (max-width: 600px) {
     font-size: 16px;
+    text-transform: uppercase;
   }
 
   @media (max-width: 450px) {
