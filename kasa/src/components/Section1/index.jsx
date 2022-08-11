@@ -5,7 +5,7 @@ const Section = styled.section`
   @media all {
     display: flex;
     flex-direction: column;
-    width: 86.11%;
+    width: 100%;
     margin: auto;
     align-items: center;
     height: 223px;
@@ -30,7 +30,6 @@ const Section = styled.section`
   }
 
   @media (max-width: 600px) {
-    width: 89.33%;
     height: 111px;
     border-radius: 10px;
     margin-top: 20px;
@@ -114,7 +113,8 @@ const Slogan = styled.h1`
     font-size: 24px;
     line-height: 100%;
     top: 30%;
-    left: 10%;
+    left: 8%;
+    padding-right: 20px;
   }
 `;
 
