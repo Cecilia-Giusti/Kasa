@@ -22,7 +22,7 @@ function AccomodationPage() {
     (product) => product.id === idAccomodation
   );
 
-  console.log(accomodation);
+  console.log(accomodation.tags);
 
   return (
     <main>
@@ -38,7 +38,7 @@ function AccomodationPage() {
         />
       </SectionPresentation>
       <section>
-        <Content />
+        <Content id={accomodation.id} tagsArray={accomodation.tags} />
       </section>
     </main>
   );
