@@ -25,6 +25,14 @@ const GlobalStyle = createGlobalStyle`
         margin-block-end:0px;
     }
 
+    h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+    }
+
 }
 
 `;
