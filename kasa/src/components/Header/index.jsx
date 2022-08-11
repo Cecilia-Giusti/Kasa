@@ -32,7 +32,7 @@ const Logo = styled.img`
     height: 55px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     width: 145px;
     height: 47px;
   }
@@ -50,7 +50,7 @@ const Ul = styled.ul`
     gap: 20px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     gap: 10px;
   }
 `;
@@ -76,7 +76,7 @@ const Li = styled.li`
     font-size: 14px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     font-size: 12px;
   }
 `;
