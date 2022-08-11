@@ -40,7 +40,7 @@ const Section = styled.section`
   }
 `;
 
-const Banner = styled.img`
+const Image = styled.img`
   @media all {
     position: absolute;
     width: 100%;
@@ -118,13 +118,13 @@ const Slogan = styled.h1`
   }
 `;
 
-function Section1() {
+function Banner() {
   return (
     <Section>
-      <Banner src={section1_home} alt="Montages" />
+      <Image src={section1_home} alt="Montages" />
       <Slogan> Chez vous, partout et ailleurs</Slogan>
     </Section>
   );
 }
 
-export default Section1;
+export default Banner;

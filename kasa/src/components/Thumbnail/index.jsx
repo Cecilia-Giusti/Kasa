@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Article = styled.article`
@@ -216,13 +217,15 @@ const Title = styled.h2`
   }
 `;
 
-function Thumb({ id, title, cover }) {
+function Thumbnail({ id, title, cover }) {
   return (
-    <Article key={id}>
-      <Cover src={cover} alt={title} />
-      <Title>{title}</Title>
-    </Article>
+    <Link to={`/logement/${id}`}>
+      <Article key={`${id}`}>
+        <Cover src={cover} alt={title} />
+        <Title>{title}</Title>
+      </Article>
+    </Link>
   );
 }
 
-export default Thumb;
+export default Thumbnail;
