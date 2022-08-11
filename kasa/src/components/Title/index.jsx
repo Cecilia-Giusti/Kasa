@@ -14,8 +14,6 @@ const Location = styled.h2`
 `;
 
 function Title({ titleAccomodation, location }) {
-  console.log(location);
-
   return (
     <div>
       <TitleAccomodation>{titleAccomodation}</TitleAccomodation>
