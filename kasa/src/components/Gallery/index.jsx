@@ -1,4 +1,4 @@
-import Thumb from "../Thumb";
+import Thumbnail from "../Thumbnail";
 import styled from "styled-components";
 import colors from "../../utils/style/colors";
 import { useFetch } from "../../Api";
@@ -46,7 +46,7 @@ function Gallery() {
   return (
     <Section>
       {locationsData.map(({ id, title, cover }) => (
-        <Thumb id={id} title={title} cover={cover} />
+        <Thumbnail id={id} title={title} cover={cover} />
       ))}
     </Section>
   );
