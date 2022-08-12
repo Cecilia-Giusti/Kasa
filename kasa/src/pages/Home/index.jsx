@@ -2,11 +2,11 @@ import Banner from "../../components/Banner";
 import React from "react";
 import Gallery from "../../components/Gallery";
 
-function Home() {
+function Home({ accomodationData }) {
   return (
     <main>
       <Banner />
-      <Gallery />
+      <Gallery accomodationData={accomodationData} />
     </main>
   );
 }

@@ -1,7 +1,6 @@
 import Thumbnail from "../Thumbnail";
 import styled from "styled-components";
 import colors from "../../utils/style/colors";
-import { useFetch } from "../../Api";
 
 const Section = styled.section`
   @media all {
@@ -39,14 +38,11 @@ const Section = styled.section`
   }
 `;
 
-function Gallery() {
-  const { data } = useFetch(`http://localhost:3000/data/data.json`);
-  const locationsData = data;
-
+function Gallery({ accomodationData }) {
   return (
     <Section>
-      {locationsData.map(({ id, title, cover }) => (
-        <Thumbnail id={id} title={title} cover={cover} />
+      {accomodationData.map(({ id, title, cover }) => (
+        <Thumbnail key={`${id}`} id={id} title={title} cover={cover} />
       ))}
     </Section>
   );

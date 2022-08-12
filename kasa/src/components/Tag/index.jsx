@@ -16,8 +16,8 @@ const TagStyle = styled.p`
   padding: 5px 25px 1px 25px;
 `;
 
-function Tag({ id, tag }) {
-  return <TagStyle key={`${tag}-${id}`}>{tag}</TagStyle>;
+function Tag({ tag }) {
+  return <TagStyle>{tag}</TagStyle>;
 }
 
 export default Tag;

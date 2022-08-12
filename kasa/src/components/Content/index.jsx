@@ -9,13 +9,13 @@ const Tags = styled.div`
   justify-content: flex-start;
 `;
 
-function Content({ id, tagsArray }) {
+function Content({ id, tagsArray, rateNumber }) {
   return (
     <section>
       <div>
         <Tags>
           {tagsArray.map((tagName) => (
-            <Tag id={id} tag={tagName} />
+            <Tag key={`${tagName}-${id}`} tag={tagName} />
           ))}
         </Tags>
         <Rate />

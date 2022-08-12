@@ -1,5 +1,4 @@
 import { useParams } from "react-router";
-import { useFetch } from "../../Api";
 import Carroussel from "../../components/Carroussel";
 import Title from "../../components/Title";
 import Host from "../../components/Host";
@@ -12,17 +11,12 @@ const SectionPresentation = styled.section`
   align-items: center;
 `;
 
-function AccomodationPage() {
+function AccomodationPage({ accomodationData }) {
   const { idAccomodation } = useParams();
-
-  const { data } = useFetch(`http://localhost:3000/data/data.json`);
-  const accomodationData = data;
 
   const accomodation = accomodationData.find(
     (product) => product.id === idAccomodation
   );
-
-  console.log(accomodation.tags);
 
   return (
     <main>
@@ -38,7 +32,11 @@ function AccomodationPage() {
         />
       </SectionPresentation>
       <section>
-        <Content id={accomodation.id} tagsArray={accomodation.tags} />
+        <Content
+          id={accomodation.id}
+          tagsArray={accomodation.tags}
+          rateNumber={accomodation.rating}
+        />
       </section>
     </main>
   );
