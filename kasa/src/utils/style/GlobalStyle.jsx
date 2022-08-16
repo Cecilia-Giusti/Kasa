@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
         margin: auto;
     }
 
+    ul{
+        box-sizing: border-box;
+    }
+
     a {
         text-decoration:none;
     }
@@ -36,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
         line-height: 142.6%;
     }
 
-    h1, h2, h3{
+    h1, h2, h3, ul{
         margin-block-start :0px;
         margin-block-end:0px;
     }

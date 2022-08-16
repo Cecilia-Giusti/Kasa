@@ -36,6 +36,8 @@ function AccomodationPage({ accomodationData }) {
           id={accomodation.id}
           tagsArray={accomodation.tags}
           rateNumber={accomodation.rating}
+          description={accomodation.description}
+          equipment={accomodation.equipments}
         />
       </section>
     </main>

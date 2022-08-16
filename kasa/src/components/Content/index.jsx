@@ -16,7 +16,13 @@ const Tags = styled.div`
   justify-content: flex-start;
 `;
 
-function Content({ id, tagsArray, rateNumber }) {
+const DropdownFlex = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+`;
+
+function Content({ id, tagsArray, rateNumber, description, equipment }) {
   return (
     <section>
       <TagsAndRating>
@@ -27,10 +33,10 @@ function Content({ id, tagsArray, rateNumber }) {
         </Tags>
         <Rate rating={rateNumber} />
       </TagsAndRating>
-      <div>
-        <Dropdown />
-        <Dropdown />
-      </div>
+      <DropdownFlex>
+        <Dropdown type="Description" content={description} />
+        <Dropdown type="Équipements" content={equipment} />
+      </DropdownFlex>
     </section>
   );
 }
