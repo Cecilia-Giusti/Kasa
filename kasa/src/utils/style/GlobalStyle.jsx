@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
         line-height: 142.6%;
     }
 
-    h1, h2, h3, ul{
+    h1, h2, h3, ul, p{
         margin-block-start :0px;
         margin-block-end:0px;
     }
@@ -51,6 +51,12 @@ const GlobalStyle = createGlobalStyle`
     }
 
 }
+
+@media (max-width: 600px) {
+    main{
+    width: 89.33%;
+    }
+  }
 
 `;
 

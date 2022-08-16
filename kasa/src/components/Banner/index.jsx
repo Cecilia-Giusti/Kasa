@@ -8,7 +8,7 @@ const Section = styled.section`
     width: 100%;
     margin: auto;
     align-items: center;
-    height: 223px;
+    height: 500px;
     overflow: hidden;
     border-radius: 25px;
     position: relative;
@@ -27,6 +27,10 @@ const Section = styled.section`
       bottom: 0;
       z-index: 50;
     }
+  }
+
+  @media (max-width: 1440px) {
+    height: 223px;
   }
 
   @media (max-width: 600px) {
