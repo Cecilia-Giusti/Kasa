@@ -35,6 +35,7 @@ const Section = styled.section`
     padding: inherit;
     gap: inherit;
     row-gap: 20px;
+    width: 89.33%;
   }
 `;
 

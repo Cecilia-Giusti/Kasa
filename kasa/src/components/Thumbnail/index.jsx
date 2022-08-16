@@ -83,8 +83,18 @@ const Article = styled.article`
     height: 400px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 550px) {
+    width: 450px;
+    height: 350px;
+  }
+
+  @media (max-width: 470px) {
     width: 400px;
+    height: 300px;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
     height: 300px;
   }
 
@@ -152,8 +162,18 @@ const Cover = styled.img`
     height: 400px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 550px) {
+    width: 450px;
+    height: 350px;
+  }
+
+  @media (max-width: 470px) {
     width: 400px;
+    height: 300px;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
     height: 300px;
   }
 
