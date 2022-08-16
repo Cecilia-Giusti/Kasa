@@ -1,19 +1,13 @@
-import Section1 from "../../components/Section1";
+import Banner from "../../components/Banner";
 import React from "react";
 import Gallery from "../../components/Gallery";
-import styled from "styled-components";
 
-const Main = styled.main`
-  width: 86.11%;
-  margin: auto;
-`;
-
-function Home() {
+function Home({ accomodationData }) {
   return (
-    <Main>
-      <Section1 />
-      <Gallery />
-    </Main>
+    <main>
+      <Banner />
+      <Gallery accomodationData={accomodationData} />
+    </main>
   );
 }
 

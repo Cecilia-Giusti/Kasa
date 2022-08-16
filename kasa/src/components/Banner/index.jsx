@@ -8,7 +8,7 @@ const Section = styled.section`
     width: 100%;
     margin: auto;
     align-items: center;
-    height: 223px;
+    height: 500px;
     overflow: hidden;
     border-radius: 25px;
     position: relative;
@@ -29,6 +29,10 @@ const Section = styled.section`
     }
   }
 
+  @media (max-width: 1440px) {
+    height: 223px;
+  }
+
   @media (max-width: 600px) {
     height: 111px;
     border-radius: 10px;
@@ -40,7 +44,7 @@ const Section = styled.section`
   }
 `;
 
-const Banner = styled.img`
+const Image = styled.img`
   @media all {
     position: absolute;
     width: 100%;
@@ -118,13 +122,13 @@ const Slogan = styled.h1`
   }
 `;
 
-function Section1() {
+function Banner() {
   return (
     <Section>
-      <Banner src={section1_home} alt="Montages" />
+      <Image src={section1_home} alt="Montages" />
       <Slogan> Chez vous, partout et ailleurs</Slogan>
     </Section>
   );
 }
 
-export default Section1;
+export default Banner;

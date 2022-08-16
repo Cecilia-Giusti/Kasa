@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Article = styled.article`
@@ -82,8 +83,18 @@ const Article = styled.article`
     height: 400px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 550px) {
+    width: 450px;
+    height: 350px;
+  }
+
+  @media (max-width: 470px) {
     width: 400px;
+    height: 300px;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
     height: 300px;
   }
 
@@ -151,8 +162,18 @@ const Cover = styled.img`
     height: 400px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 550px) {
+    width: 450px;
+    height: 350px;
+  }
+
+  @media (max-width: 470px) {
     width: 400px;
+    height: 300px;
+  }
+
+  @media (max-width: 425px) {
+    width: 350px;
     height: 300px;
   }
 
@@ -216,13 +237,15 @@ const Title = styled.h2`
   }
 `;
 
-function Thumb({ id, title, cover }) {
+function Thumbnail({ id, title, cover }) {
   return (
-    <Article key={id}>
-      <Cover src={cover} alt={title} />
-      <Title>{title}</Title>
-    </Article>
+    <Link to={`/logement/${id}`}>
+      <Article>
+        <Cover src={cover} alt={title} />
+        <Title>{title}</Title>
+      </Article>
+    </Link>
   );
 }
 
-export default Thumb;
+export default Thumbnail;
