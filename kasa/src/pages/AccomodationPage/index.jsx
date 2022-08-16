@@ -20,7 +20,7 @@ function AccomodationPage({ accomodationData }) {
 
   return (
     <main>
-      <Carroussel />
+      <Carroussel pictures={accomodation.pictures} />
       <SectionPresentation>
         <Title
           titleAccomodation={accomodation.title}

@@ -41,6 +41,11 @@ const GlobalStyle = createGlobalStyle`
         margin-block-end:0px;
     }
 
+    button{
+        background:none;
+        border:none;
+    }
+
 }
 
 `;
