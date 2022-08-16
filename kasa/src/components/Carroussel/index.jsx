@@ -61,36 +61,44 @@ function Carroussel({ pictures }) {
   const [idPicture, updateId] = useState(0);
 
   useEffect(() => {
-    console.log(idPicture);
     document.Picture = pictures[idPicture];
   });
 
-  return (
-    <CarrousselBackground>
-      <button
-        onClick={() =>
-          idPicture === 0
-            ? updateId(pictures.length - 1)
-            : updateId(idPicture - 1)
-        }
-      >
-        <ArrowLeft src={arrowLeft} alt="Précedent" />
-      </button>
-      <Picture src={pictures[idPicture]} alt="coucou" />
-      <button
-        onClick={() =>
-          idPicture === pictures.length - 1
-            ? updateId(0)
-            : updateId(idPicture + 1)
-        }
-      >
-        <Number>
-          {idPicture + 1}/{pictures.length}
-        </Number>
-        <ArrowRight src={arrowRight} alt="Suivant" />
-      </button>
-    </CarrousselBackground>
-  );
+  if (pictures.length > 1) {
+    return (
+      <CarrousselBackground>
+        <button
+          onClick={() =>
+            idPicture === 0
+              ? updateId(pictures.length - 1)
+              : updateId(idPicture - 1)
+          }
+        >
+          <ArrowLeft src={arrowLeft} alt="Précedent" />
+        </button>
+        <Picture src={pictures[idPicture]} alt="Images" />
+        <button
+          onClick={() =>
+            idPicture === pictures.length - 1
+              ? updateId(0)
+              : updateId(idPicture + 1)
+          }
+        >
+          <Number>
+            {idPicture + 1}/{pictures.length}
+          </Number>
+          <ArrowRight src={arrowRight} alt="Suivant" />
+        </button>
+      </CarrousselBackground>
+    );
+  } else {
+    return (
+      <CarrousselBackground>
+        <Picture src={pictures[idPicture]} alt="coucou" />
+        <Number>1/1</Number>
+      </CarrousselBackground>
+    );
+  }
 }
 
 export default Carroussel;
