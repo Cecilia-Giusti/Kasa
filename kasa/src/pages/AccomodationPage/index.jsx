@@ -100,8 +100,18 @@ function AccomodationPage({ accomodationData }) {
         />
       </RateAndHost>
       <DropdownFlex>
-        <Dropdown type="Description" content={accomodation.description} />
-        <Dropdown type="Équipements" content={accomodation.equipments} />
+        <Dropdown
+          type="Paragraphe"
+          titre="Description"
+          content={accomodation.description}
+          page="Home"
+        />
+        <Dropdown
+          type="Liste"
+          titre="Équipements"
+          content={accomodation.equipments}
+          page="Home"
+        />
       </DropdownFlex>
     </main>
   );

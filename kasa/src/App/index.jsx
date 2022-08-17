@@ -6,6 +6,7 @@ import AccomodationPage from "../pages/AccomodationPage";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Error from "../components/Error";
+import APropos from "../pages/APropos";
 
 function App() {
   const [accomodationData, setData] = useState([]);
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route path="/P11---Kasa/logement/:idAccomodation">
           <AccomodationPage accomodationData={accomodationData} />
+        </Route>
+        <Route exact path="/P11---Kasa/a_propos">
+          <APropos />
         </Route>
         <Route>
           <Error />
