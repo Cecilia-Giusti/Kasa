@@ -147,6 +147,10 @@ const ArrowLeft = styled.img`
   }
 `;
 
+/** Banniere avec une image
+ * @param {array} pictures - Tableau d'image à afficher dans le carroussel
+ * @return {JSX.Element}
+ */
 function Carroussel({ pictures }) {
   const [idPicture, updateId] = useState(0);
 

@@ -38,7 +38,10 @@ const Section = styled.section`
     width: 89.33%;
   }
 `;
-
+/** Création de la galerie de la page d'accueil
+ * @param {array} accomodationData - Tableau des biens
+ * @return {JSX.Element}
+ */
 function Gallery({ accomodationData }) {
   return (
     <Section>

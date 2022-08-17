@@ -76,6 +76,9 @@ const Home = styled.p`
   }
 `;
 
+/** Création de l'erreur 404
+ * @return {JSX.Element}
+ */
 function Error() {
   return (
     <section>

@@ -8,13 +8,16 @@ import Header from "../components/Header";
 import Error from "../components/Error";
 import APropos from "../pages/APropos";
 
+/**Fonction d'initialisation de l'application
+ * @return {JSX.Element}
+ */
 function App() {
   const [accomodationData, setData] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`./P11---Kasa/data/data.json`);
+        const response = await fetch(`./P11---Kasa/static/data/data.json`);
         const accomodationData = await response.json();
         setData(accomodationData);
       } catch (err) {

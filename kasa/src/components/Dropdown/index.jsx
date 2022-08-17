@@ -126,6 +126,13 @@ const Liste = styled.ul`
   }
 `;
 
+/** Création du Dropdown
+ * @param {string} type - Choix entre paragraphe ou liste dans le dropdown
+ * @param {string} titre - Titre du dropdown
+ * @param {string} content - Contenu du dropdown
+ * @param {string} page - Page où le dropdown sera, Home ou A propos
+ * @return {JSX.Element}
+ */
 function Dropdown({ type, titre, content, page }) {
   const [isClose, setIsClose] = useState(false);
   return page === "Home" ? (

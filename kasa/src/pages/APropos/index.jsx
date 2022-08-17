@@ -13,6 +13,9 @@ const Section = styled.section`
   }
 `;
 
+/** Création de la page A propos
+ * @return {JSX.Element}
+ */
 function APropos() {
   const sectionApropos = [
     {

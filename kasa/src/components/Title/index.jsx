@@ -33,6 +33,11 @@ const Location = styled.h2`
   }
 `;
 
+/** Création des titres de la page d'un bien
+ * @param {string} titleAccomodation - Titre du bien
+ * @param {string} location - Localisation du bien
+ * @return {JSX.Element}
+ */
 function Title({ titleAccomodation, location }) {
   return (
     <div>

@@ -51,6 +51,10 @@ const RateAndHost = styled.div`
   margin-top: 16px;
 `;
 
+/** Création d'une page d'un bien
+ * @param {array} accomodationData - Tableau des biens
+ * @return {JSX.Element}
+ */
 function AccomodationPage({ accomodationData }) {
   const { idAccomodation } = useParams();
   const accomodation = accomodationData.find(

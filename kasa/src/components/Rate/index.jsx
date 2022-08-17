@@ -12,6 +12,10 @@ const Rating = styled.div`
   }
 `;
 
+/** Création de la partie note du bien
+ * @param {string} rating - Note du bien
+ * @return {JSX.Element}
+ */
 function Rate({ rating }) {
   const ratingMax = 5;
   const starFull = <img src={star_full} alt="Etoile complete" />;

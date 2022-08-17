@@ -23,7 +23,10 @@ const TagStyle = styled.p`
     padding: 3px 25px 0.8px 25px;
   }
 `;
-
+/** Création d'un tag
+ * @param {string} tag - Tag
+ * @return {JSX.Element}
+ */
 function Tag({ tag }) {
   return <TagStyle>{tag}</TagStyle>;
 }

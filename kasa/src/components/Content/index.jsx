@@ -22,6 +22,14 @@ const DropdownFlex = styled.div`
   justify-content: space-between;
 `;
 
+/** Contenu de la page d'une location, tags, note, description et equipements
+ * @param {string} id - id du bien
+ * @param {array} tagsArray - Tableau des tags du bien
+ * @param {string} rateNumber - note du bien
+ * @param {string} description - Description du bien
+ * @param {array} equipment - Tableau des équipements du bien
+ * @return {JSX.Element}
+ */
 function Content({ id, tagsArray, rateNumber, description, equipment }) {
   return (
     <section>

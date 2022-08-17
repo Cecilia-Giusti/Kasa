@@ -81,6 +81,9 @@ const Li = styled.li`
   }
 `;
 
+/** Création du header
+ * @return {JSX.Element}
+ */
 function Header() {
   return (
     <HeaderContent>

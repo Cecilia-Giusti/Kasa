@@ -195,6 +195,10 @@ const Slogan = styled.h1`
   }
 `;
 
+/** Banniere avec une image
+ * @param {string} type - Le type de page, Home ou Apropos
+ * @return {JSX.Element}
+ */
 function Banner({ image, type }) {
   return type === "Home" ? (
     <SectionHome>

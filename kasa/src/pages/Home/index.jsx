@@ -3,6 +3,10 @@ import React from "react";
 import Gallery from "../../components/Gallery";
 import bannerHome from "../../assets/banner_Home.png";
 
+/** Création de la page d'accueil
+ * @param {array} accomodationData - Tableau des biens
+ * @return {JSX.Element}
+ */
 function Home({ accomodationData }) {
   return (
     <main>
