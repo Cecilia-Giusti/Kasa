@@ -34,8 +34,18 @@ function Content({ id, tagsArray, rateNumber, description, equipment }) {
         <Rate rating={rateNumber} />
       </TagsAndRating>
       <DropdownFlex>
-        <Dropdown type="Description" content={description} />
-        <Dropdown type="Équipements" content={equipment} />
+        <Dropdown
+          type="Paragraphe"
+          titre="Description"
+          page="Home"
+          content={description}
+        />
+        <Dropdown
+          type="Liste"
+          titre="Équipements"
+          page="Home"
+          content={equipment}
+        />
       </DropdownFlex>
     </section>
   );

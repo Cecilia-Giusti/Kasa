@@ -7,10 +7,13 @@ import { useState } from "react";
 const ContentDropdown = styled.div`
   @media all {
     width: 47.18%;
+    ${(props) =>
+      props.$fullDropdown && `width:82.5%; margin:auto; padding-bottom:33px`};
   }
 
   @media (max-width: 600px) {
     width: 100%;
+    ${(props) => props.$fullDropdown && `padding-bottom:20px `};
   }
 `;
 
@@ -18,11 +21,15 @@ const ContentDropdownClose = styled.div`
   @media all {
     width: 47.18%;
     height: 300px;
+    ${(props) =>
+      props.$fullDropdown &&
+      `width:82.5%; margin:auto; height:inherit;padding-bottom:31px `};
   }
 
   @media (max-width: 600px) {
     width: 100%;
     height: inherit;
+    ${(props) => props.$fullDropdown && `padding-bottom:20px `};
   }
 `;
 
@@ -45,6 +52,7 @@ const Button = styled.button`
     line-height: 142.6%;
     z-index: 50;
     position: relative;
+    ${(props) => props.$fullDropdown && `font-size: 24px`};
   }
   @media (max-width: 375px) {
     font-size: 13px;
@@ -84,6 +92,7 @@ const Paragraphe = styled.p`
     font-weight: 400;
     font-size: 18px;
     line-height: 142.6%;
+    ${(props) => props.$fullDropdown && `font-size: 24px`};
   }
 
   @media (max-width: 375px) {
@@ -117,32 +126,52 @@ const Liste = styled.ul`
   }
 `;
 
-function Dropdown({ type, content }) {
+function Dropdown({ type, titre, content, page }) {
   const [isClose, setIsClose] = useState(false);
-  return !isClose ? (
-    <ContentDropdownClose>
-      <Button onClick={() => setIsClose(true)}>
-        <p>{type}</p>
+  return page === "Home" ? (
+    !isClose ? (
+      <ContentDropdownClose>
+        <Button onClick={() => setIsClose(true)}>
+          <p>{titre}</p>
+          <img src={arrowOpen} alt="Ouvrir" />
+        </Button>
+      </ContentDropdownClose>
+    ) : (
+      <ContentDropdown>
+        <Button onClick={() => setIsClose(false)}>
+          <p>{titre}</p>
+          <img src={arrowClosed} alt="Ouvrir" />
+        </Button>
+        {type === "Paragraphe" ? (
+          <Description>
+            <Paragraphe>{content}</Paragraphe>
+          </Description>
+        ) : (
+          <Liste>
+            {content.map((element) => (
+              <li key={`${element}-${element.id}`}>{element}</li>
+            ))}
+          </Liste>
+        )}
+      </ContentDropdown>
+    )
+  ) : !isClose ? (
+    <ContentDropdownClose $fullDropdown>
+      <Button $fullDropdown onClick={() => setIsClose(true)}>
+        <p>{titre}</p>
         <img src={arrowOpen} alt="Ouvrir" />
       </Button>
     </ContentDropdownClose>
   ) : (
-    <ContentDropdown>
-      <Button onClick={() => setIsClose(false)}>
-        <p>{type}</p>
+    <ContentDropdown $fullDropdown>
+      <Button $fullDropdown onClick={() => setIsClose(false)}>
+        <p>{titre}</p>
         <img src={arrowClosed} alt="Ouvrir" />
       </Button>
-      {type === "Description" ? (
-        <Description>
-          <Paragraphe>{content}</Paragraphe>
-        </Description>
-      ) : (
-        <Liste>
-          {content.map((element) => (
-            <li key={`${element}-${element.id}`}>{element}</li>
-          ))}
-        </Liste>
-      )}
+
+      <Description>
+        <Paragraphe $fullDropdown>{content}</Paragraphe>
+      </Description>
     </ContentDropdown>
   );
 }
