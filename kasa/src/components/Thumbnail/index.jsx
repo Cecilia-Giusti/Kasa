@@ -239,7 +239,7 @@ const Title = styled.h2`
 
 function Thumbnail({ id, title, cover }) {
   return (
-    <Link to={`/logement/${id}`}>
+    <Link to={`/P11---Kasa/logement/${id}`}>
       <Article>
         <Cover src={cover} alt={title} />
         <Title>{title}</Title>

@@ -90,7 +90,7 @@ function Header() {
           <Link to="/P11---Kasa">
             <Li>Accueil</Li>
           </Link>
-          <Link to="/a_propos">
+          <Link to="/P11---Kasa/a_propos">
             <Li>A propos</Li>
           </Link>
         </Ul>
