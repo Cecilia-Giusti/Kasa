@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`./data/data.json`);
+        const response = await fetch(`./P11---Kasa/data/data.json`);
         const accomodationData = await response.json();
         setData(accomodationData);
       } catch (err) {
@@ -28,7 +28,7 @@ function App() {
       <Route exact path="/P11---Kasa">
         <Home accomodationData={accomodationData} />
       </Route>
-      <Route path="/logement/:idAccomodation">
+      <Route path="/P11---Kasa/logement/:idAccomodation">
         <AccomodationPage accomodationData={accomodationData} />
       </Route>
       <Footer />
