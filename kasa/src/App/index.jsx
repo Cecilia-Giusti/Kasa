@@ -25,7 +25,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <Route exact path="/">
+      <Route exact path="/P11---Kasa">
         <Home accomodationData={accomodationData} />
       </Route>
       <Route path="/logement/:idAccomodation">

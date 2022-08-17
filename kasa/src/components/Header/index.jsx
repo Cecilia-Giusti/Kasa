@@ -87,7 +87,7 @@ function Header() {
       <Logo src={logo} alt=" Logo de Kasa" />
       <Nav>
         <Ul>
-          <Link to="/">
+          <Link to="/P11---Kasa">
             <Li>Accueil</Li>
           </Link>
           <Link to="/a_propos">
