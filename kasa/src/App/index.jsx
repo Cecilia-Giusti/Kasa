@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`./P11---Kasa/static/data/data.json`);
+        const response = await fetch(`./P11---Kasa/data/data.json`);
         const accomodationData = await response.json();
         setData(accomodationData);
       } catch (err) {
