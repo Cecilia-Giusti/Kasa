@@ -7,10 +7,10 @@ import "./host.css";
  */
 function Host({ nameHost, pictureHost }) {
   return (
-    <section className="hostSection">
-      <h3 className="name">{nameHost}</h3>
+    <section className="host__section">
+      <h3 className="host__title">{nameHost}</h3>
       <img
-        className="cicture"
+        className="host__img"
         src={pictureHost}
         alt={`profil de ${nameHost} `}
       />

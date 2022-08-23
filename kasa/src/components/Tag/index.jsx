@@ -5,7 +5,7 @@ import "./tag.css";
  * @return {JSX.Element}
  */
 function Tag({ tag }) {
-  return <p className="tagStyle">{tag}</p>;
+  return <p className="tag__copy">{tag}</p>;
 }
 
 export default Tag;

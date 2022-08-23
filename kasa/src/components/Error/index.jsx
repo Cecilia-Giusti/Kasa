@@ -6,13 +6,13 @@ import "./error.css";
  */
 function Error() {
   return (
-    <section>
-      <p className="number">404</p>
-      <p className="paragraphe">
+    <section className="error__section">
+      <h1 className="error__title">404</h1>
+      <p className="error__content">
         Oups! La page que vous demandez n'existe pas.
       </p>
       <Link to="/P11---Kasa">
-        <p className="Home">Retourner sur la page d’accueil</p>
+        <p className="error__link">Retourner sur la page d’accueil</p>
       </Link>
     </section>
   );

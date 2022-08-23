@@ -1,6 +1,6 @@
 
   @media all {
-    .section{
+    .gallery{
     display: flex;
     justify-content: center;
     gap: 60px 50px;
@@ -15,26 +15,26 @@
   }
 
   @media (max-width: 1420px) {
-    .section{
+    .gallery{
     gap: 40px 30px;
     }
   }
 
   @media (max-width: 1056px) {
-    .section{
+    .gallery{
     gap: 20px 20px;
     padding: 30px;
     }
   }
 
   @media (max-width: 987px) {
-    .section{
+    .gallery{
     padding: 20px;
     }
   }
 
   @media (max-width: 603px) {
-    .section{
+    .gallery{
     background-color: inherit;
     padding: inherit;
     gap: inherit;

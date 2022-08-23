@@ -6,14 +6,14 @@ import "./banner.css";
  */
 function Banner({ image, type }) {
   return type === "Home" ? (
-    <section className="sectionHome">
-      <img className="imageHome" src={image} alt="Montages" />
-      <p className="slogan">Chez vous, partout et ailleurs</p>
-    </section>
+    <div className="banner--home">
+      <img className="banner__img--home" src={image} alt="Montages" />
+      <p className="banner__copy--home">Chez vous, partout et ailleurs</p>
+    </div>
   ) : (
-    <section className="sectionApropos">
-      <img className="imageApropos" src={image} alt="Montages" />
-    </section>
+    <div className="banner--about">
+      <img className="banner__img--about" src={image} alt="Montages" />
+    </div>
   );
 }
 

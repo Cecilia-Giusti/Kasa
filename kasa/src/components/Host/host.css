@@ -1,10 +1,10 @@
 @media all {
-.hostSection{
+.host__section{
   display: flex;
   align-items: center;
   gap: 10px;}
 
-  .name{
+  .host__title{
     font-family: "Montserrat", "Arial", "Sans-serif";
     font-style: normal;
     font-weight: 500;
@@ -15,7 +15,7 @@
     color: #FF6060;
     text-align: end;}
 
-    .picture{
+    .host__img{
         width: 64px;
         height: 64px;
         border-radius: 50px;}
@@ -23,13 +23,13 @@
 }
 
   @media (max-width: 375px) {
-    .name{
+    .host__title{
     font-size: 12px;
     width: 50px;
     max-height: 33px;
   }
 
-  .picture{
+  .host__img{
     width: 32px;
     height: 32px;
   }

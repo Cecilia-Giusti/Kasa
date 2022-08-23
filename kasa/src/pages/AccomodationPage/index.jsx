@@ -21,7 +21,7 @@ function AccomodationPage({ accomodationData }) {
   return window.screen.width > 600 ? (
     <main>
       <Carroussel pictures={accomodation.pictures} />
-      <section className="sectionPresentation">
+      <section className="presentation__section">
         <Title
           titleAccomodation={accomodation.title}
           location={accomodation.location}
@@ -31,7 +31,7 @@ function AccomodationPage({ accomodationData }) {
           pictureHost={accomodation.host.picture}
         />
       </section>
-      <section>
+      <div>
         <Content
           id={accomodation.id}
           tagsArray={accomodation.tags}
@@ -39,7 +39,7 @@ function AccomodationPage({ accomodationData }) {
           description={accomodation.description}
           equipment={accomodation.equipments}
         />
-      </section>
+      </div>
     </main>
   ) : (
     <main>
@@ -48,19 +48,19 @@ function AccomodationPage({ accomodationData }) {
         titleAccomodation={accomodation.title}
         location={accomodation.location}
       />
-      <div className="tags">
+      <div className="tags__section--accomodation">
         {accomodation.tags.map((tagName) => (
           <Tag key={`${tagName}-${accomodation.id}`} tag={tagName} />
         ))}
       </div>
-      <div className="rateAndHost">
+      <div className="rateAndHost__section--accomodation">
         <Rate rating={accomodation.rating} />
         <Host
           nameHost={accomodation.host.name}
           pictureHost={accomodation.host.picture}
         />
       </div>
-      <div className="dropdownFlex">
+      <div className="dropdown__section--accomodation">
         <Dropdown
           type="Paragraphe"
           titre="Description"

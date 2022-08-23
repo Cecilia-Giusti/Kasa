@@ -6,13 +6,13 @@ import "./footer.css";
  */
 function Footer() {
   return (
-    <footer className="footerStyle">
+    <footer>
       <img
-        className="logoFooter"
+        className="footer__img"
         src={logo_footer}
         alt=" Logo de Kasa dans le pied de page"
       />
-      <p className="paragraphe">© 2020 Kasa. All rights reserved</p>
+      <p className="footer__copy">© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 }

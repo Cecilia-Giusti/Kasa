@@ -16,7 +16,7 @@ function Rate({ rating }) {
     i < rating ? starsArray.push(starFull) : starsArray.push(starEmpty);
   }
 
-  return <div className="rating">{starsArray}</div>;
+  return <div className="rate__copy">{starsArray}</div>;
 }
 
 export default Rate;

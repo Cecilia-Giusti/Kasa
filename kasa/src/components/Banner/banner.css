@@ -1,5 +1,5 @@
 @media all {
-    .sectionHome {
+    .banner--home {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -11,7 +11,7 @@
         position: relative;
     }
 
-.sectionHome:before {
+.banner--home:before {
     content: "";
     width: 100%;
     background-color: black;
@@ -26,7 +26,7 @@
     z-index: 50;
     }
 
-    .sectionApropos{  
+    .banner--about{  
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -38,7 +38,7 @@
         position: relative;
     }
 
-    .sectionApropos:before {
+    .banner--about:before {
         content: "";
         width: 100%;
         background-color: black;
@@ -53,7 +53,7 @@
         z-index: 50;
     }  
 
-    .imageHome{
+    .banner__img--home{
         position: absolute;
         width: 100%;
         left: 0;
@@ -62,7 +62,7 @@
             object-fit: contain;
     }
 
-    .imageApropos {
+    .banner__img--about {
         position: absolute;
         width: 100%;
         left: 0;
@@ -71,7 +71,7 @@
             object-fit: contain;
     }
 
-    .slogan {
+    .banner__copy--home {
         font-size: 48px;
         line-height: 142.6%;
         color: white;
@@ -83,66 +83,66 @@
 }
 
 @media (max-width: 1440px) {
-    .sectionHome {
+    .banner--home {
         height: 223px;  
     } 
 
-    .sectionApropos{  
+    .banner--about{  
         height: 223px;}
     }
 
 @media (max-width: 1300px) {
-    .slogan {
+    .banner__copy--home {
         left: 20%;
     }
 }
 
 @media (max-width: 1200px) {
-    .slogan {
+    .banner__copy--home {
         left: 15%;
     }
 }
 
 
 @media (max-width: 1100px) {
-    .slogan {
+    .banner__copy--home {
         left: 20%;
         font-size: 40px;
     }
 }
 
 @media (max-width: 1000px) {
-    .slogan {
+    .banner__copy--home {
         left: 15%;
     }
 }
 
 
 @media (max-width: 900px) {
-    .imageHome{
+    .banner__img--home{
         top: -500px;
     }
 
-    .imageApropos {
+    .banner__img--about {
         top: -150px;
     }
 
-    .slogan {
+    .banner__copy--home {
         left: 15%;
         font-size: 36px;
     }
 }  
 
 @media (max-width: 800px) {
-    .imageHome{
+    .banner__img--home{
         top: -300px;
     }
 
-    .imageApropos {
+    .banner__img--about {
         top: -100px;
     }
 
-    .slogan {
+    .banner__copy--home {
         top: 37%;
         left: 20%;
         font-size: 30px;
@@ -150,40 +150,40 @@
 }
 
 @media (max-width: 700px) {
-    .slogan {
+    .banner__copy--home {
         left: 10%;
     }
 }
 
 
 @media (max-width: 600px) {
-    .sectionHome {
+    .banner--home {
         height: 111px;
         border-radius: 10px;
         margin-top: 20px;
 }
 
-    .sectionHome:before {
+    .banner--home:before {
         border-radius: 10px;
     }   
 
-    .sectionApropos{  
+    .banner--about{  
         border-radius: 10px;
         margin-top: 20px;
     }
-    .sectionApropos:before {
+    .banner--about:before {
         border-radius: 10px;
     }    
 
-    .imageHome{
+    .banner__img--home{
         top: -200px;
     }
 
-    .imageApropos {
+    .banner__img--about {
         top: 0;
     }
 
-    .slogan {
+    .banner__copy--home {
         left: 10%;
         font-size: 26px;
     }
@@ -191,7 +191,7 @@
 }
 
 @media (max-width: 500px) {
-    .slogan {
+    .banner__copy--home {
         font-size: 24px;
         line-height: 100%;
         top: 30%;
@@ -201,12 +201,12 @@
 }
 
 @media (max-width: 400px) {
-    .sectionApropos{  
+    .banner--about{  
         width: 336px;
         height: 223px;
 }
 
-    .imageApropos {
+    .banner__img--about {
         width: 336px;
         height: 223px;
         }

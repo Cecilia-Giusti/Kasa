@@ -1,6 +1,6 @@
 
   @media all {
-    .article{
+    .card{
     width: 340px;
     height: 340px;
     border-radius: 10px;
@@ -8,7 +8,7 @@
     position: relative;
     transition-duration: 200ms;}
 
-    .article:before {
+    .card:before {
       content: "";
       width: 100%;
       background: linear-gradient(
@@ -25,19 +25,19 @@
       z-index: 50;
       }
 
-      .article:hover {
+      .card:hover {
       box-shadow: 1px 1px 12px #777;
       transition-duration: 200ms;
     }
 
-    .cover{
+    .card__img{
         width: 340px;
         height: 340px;
         border-radius: 10px;
-        -o-object-fit: cover;
-           object-fit: cover;}
+        -o-object-fit: card__img;
+           object-fit: card__img;}
 
-        .title{
+        .card__title{
             color: white;
             position: absolute;
             left: 5.88%;
@@ -48,128 +48,128 @@
     }
 
   @media (max-width: 1371px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 300px;
     height: 300px;}
 
-    .title{
+    .card__title{
         top: 72%;
       }
   }
 
   @media (max-width: 1230px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 280px;
     height: 280px;}
   }
 
   @media (max-width: 1161px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 250px;
     height: 250px;}
 
-    .title{
+    .card__title{
         top: 70%;
         font-size: 16px;
       }
   }
 
   @media (max-width: 963px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 220px;
     height: 220px;}
 
-    .title{
+    .card__title{
         top: 70%;
         font-size: 14px;
       }
   }
 
   @media (max-width: 900px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 330px;
     height: 330px;}
 
-    .title{
+    .card__title{
         top: 75%;
         font-size: 18px;
       }
   }
 
   @media (max-width: 836px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 300px;
     height: 300px;}
   }
 
   @media (max-width: 766px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 270px;
     height: 270px;}
 
-    .title{
+    .card__title{
         top: 72%;
       }
   }
 
   @media (max-width: 696px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 250px;
     height: 250px;}
 
-    .title{
+    .card__title{
         font-size: 16px;
         top: 70%;
       }
   }
 
   @media (max-width: 650px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 230px;
     height: 230px;}
 
-    .title{
+    .card__title{
         font-size: 14px;
       }
   }
 
   @media (max-width: 603px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 500px;
     height: 400px;}
 
-    .title{
+    .card__title{
         font-size: 18px;
         top: 75%;
       }
   }
 
   @media (max-width: 550px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 450px;
     height: 350px;}
   }
 
   @media (max-width: 470px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 400px;
     height: 300px;}
   }
 
   @media (max-width: 425px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 350px;
     height: 300px;}
   }
 
   @media (max-width: 390px) {
-    .article,  .cover{
+    .card,  .card__img{
     width: 335px;
     height: 255px;}
   }
 
   @media (max-width: 375px) {
-    .title{
+    .card__title{
     font-size: 18px;
     top: 73.73%;
   }

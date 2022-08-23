@@ -1,6 +1,6 @@
 
 @media all {
-    .number{ 
+    .error__title{ 
 font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -10,7 +10,7 @@ font-family: "Montserrat";
   color: #FF6060;
   margin-bottom: 66px;}
 
-  .paragraphe{
+  .error__content{
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
@@ -20,7 +20,7 @@ font-family: "Montserrat";
     color: #FF6060;
     margin-bottom: 182px;}
 
-    .home{
+    .error__link{
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
@@ -33,40 +33,40 @@ font-family: "Montserrat";
 }
 
 @media (max-width: 1024px) {
-    .number{ 
+    .error__title{ 
   font-size: 200px;
   margin-bottom: 50px;
     }
 
-    .paragraphe{
+    .error__content{
       font-size: 30px;
     }
 }
 
 @media (max-width: 768px) {
-    .number{ 
+    .error__title{ 
   font-size: 150px;
   margin-top: 50px;
     }
 
-    .paragraphe{
+    .error__content{
       font-size: 26px;
       margin-bottom: 100px;
     }
 }
 
 @media (max-width: 425px) {
-    .number{ 
+    .error__title{ 
   font-size: 96px;
   margin-bottom: 11px;
     }
 
-    .paragraphe{
+    .error__content{
       font-size: 18px;
       margin-bottom: 133px;
     }
 
-    .home{
+    .error__link{
       font-size: 14px;
       margin-bottom: 235px;
     }

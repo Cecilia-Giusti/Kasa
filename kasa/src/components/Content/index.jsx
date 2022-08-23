@@ -14,15 +14,15 @@ import "./content.css";
 function Content({ id, tagsArray, rateNumber, description, equipment }) {
   return (
     <section>
-      <div className="tagsAndRating">
-        <div className="tags">
+      <div className="tagsAndRating__section">
+        <div className="tags__section">
           {tagsArray.map((tagName) => (
             <Tag key={`${tagName}-${id}`} tag={tagName} />
           ))}
         </div>
         <Rate rating={rateNumber} />
       </div>
-      <div className="dropdownFlex">
+      <div className="content--dropdown">
         <Dropdown
           type="Paragraphe"
           titre="Description"

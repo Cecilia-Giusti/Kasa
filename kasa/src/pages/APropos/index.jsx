@@ -33,7 +33,7 @@ function APropos() {
   return (
     <main>
       <Banner image={bannerApropos} type="APropos" />
-      <section className="section">
+      <div className="section--about">
         {sectionApropos.map(({ title, content }) => (
           <Dropdown
             key={`${title}`}
@@ -43,7 +43,7 @@ function APropos() {
             page="Apropos"
           />
         ))}
-      </section>
+      </div>
     </main>
   );
 }

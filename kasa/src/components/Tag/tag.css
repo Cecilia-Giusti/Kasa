@@ -1,6 +1,6 @@
 
   @media all {
-    .tagStyle{
+    .tag__copy{
     height: 25px;
     border-radius: 10px;
     background-color: #FF6060;
@@ -16,7 +16,7 @@
   }
 
   @media (max-width: 375px) {
-    .tagStyle{
+    .tag__copy{
     font-size: 10px;
     height: 18px;
     padding: 3px 25px 0.8px 25px;

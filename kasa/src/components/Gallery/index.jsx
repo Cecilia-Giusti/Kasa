@@ -7,11 +7,11 @@ import "./gallery.css";
  */
 function Gallery({ accomodationData }) {
   return (
-    <section className="section">
+    <div className="gallery">
       {accomodationData.map(({ id, title, cover }) => (
         <Thumbnail key={`${id}`} id={id} title={title} cover={cover} />
       ))}
-    </section>
+    </div>
   );
 }
 

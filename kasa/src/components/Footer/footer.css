@@ -1,7 +1,7 @@
 
   @media all {
-    .footerStyle{
-      box-sizing: border-box;
+    footer{
+    box-sizing: border-box;
     background-color: black;
     width: 100%;
     max-height: 209px;
@@ -12,15 +12,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 28px;
     margin-top: 50px;
     padding-top:50px;
+    padding-bottom: 30px;
   }
 
-    .logoFooter{
+    .footer__img{
         width: 122px;
         height: 39.44px;}
 
-        .paragraphe{
+        .footer__copy{
             font-family: "Montserrat", Arial, "Sans-serif";
             font-style: normal;
             font-weight: 500;
@@ -29,13 +31,18 @@
   }
 
   @media (max-width: 600px) {
-    .paragraphe{
+    .footer__copy{
     font-size: 16px;
   }
 }
 
   @media (max-width: 375px) {
-    .paragraphe{
+    footer{
+      row-gap: 40px;
+      padding-bottom:62px;
+    }
+
+    .footer__copy{
     font-size: 12px;
     margin-top: 20px;
   }

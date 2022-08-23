@@ -1,18 +1,18 @@
 
-.TagsAndRating{
+.tagsAndRating__section{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;}
 
 
-.tags {
+.tags__section {
     display: flex;
     gap: 10px;
     justify-content: flex-start;}
 
 
-.dropdownFlex {  
+.content--dropdown {  
     display: flex;
     width: 100%;
     justify-content: space-between;}

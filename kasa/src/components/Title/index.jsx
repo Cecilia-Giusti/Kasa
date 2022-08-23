@@ -8,8 +8,8 @@ import "./title.css";
 function Title({ titleAccomodation, location }) {
   return (
     <div>
-      <h1 className="titleAccomodation">{titleAccomodation}</h1>
-      <h2 className="Location">{location}</h2>
+      <h1 className="presentation__title">{titleAccomodation}</h1>
+      <h2 className="presentation__subtitle">{location}</h2>
     </div>
   );
 }

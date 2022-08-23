@@ -14,24 +14,24 @@ function Dropdown({ type, titre, content, page }) {
   const [isClose, setIsClose] = useState(false);
   return page === "Home" ? (
     !isClose ? (
-      <div className="contentDropdownClose">
-        <button className="button" onClick={() => setIsClose(true)}>
+      <div className="dropdown--close">
+        <button className="dropdown__button" onClick={() => setIsClose(true)}>
           <p>{titre}</p>
           <img src={arrowOpen} alt="Ouvrir" />
         </button>
       </div>
     ) : (
-      <div className="contentDropdown">
-        <button className="button" onClick={() => setIsClose(false)}>
+      <div className="dropdown">
+        <button className="dropdown__button" onClick={() => setIsClose(false)}>
           <p>{titre}</p>
           <img src={arrowClosed} alt="Ouvrir" />
         </button>
         {type === "Paragraphe" ? (
-          <div className="description">
-            <p className="paragraphe">{content}</p>
+          <div className="dropdown__body">
+            <p className="dropdown__copy">{content}</p>
           </div>
         ) : (
-          <ul className="liste">
+          <ul className="dropdown__list">
             {content.map((element) => (
               <li key={`${element}-${element.id}`}>{element}</li>
             ))}
@@ -40,21 +40,27 @@ function Dropdown({ type, titre, content, page }) {
       </div>
     )
   ) : !isClose ? (
-    <div className="contentDropdownCloseFullDropdown">
-      <button className="buttonFullDropdown" onClick={() => setIsClose(true)}>
+    <div className="dropdown--close--fullDropdown">
+      <button
+        className="dropdown__button--fullDropdown"
+        onClick={() => setIsClose(true)}
+      >
         <p>{titre}</p>
         <img src={arrowOpen} alt="Ouvrir" />
       </button>
     </div>
   ) : (
-    <div className="contentDropdownFullDropdown" $fullDropdown>
-      <button className="buttonFullDropdown" onClick={() => setIsClose(false)}>
+    <div className="dropdown--fullDropdown" $fullDropdown>
+      <button
+        className="dropdown__button--fullDropdown"
+        onClick={() => setIsClose(false)}
+      >
         <p>{titre}</p>
         <img src={arrowClosed} alt="Ouvrir" />
       </button>
 
-      <div className="description">
-        <p className="paragrapheFullDropdown">{content}</p>
+      <div className="dropdown__body">
+        <p className="dropdown__copy--fullDropdown">{content}</p>
       </div>
     </div>
   );

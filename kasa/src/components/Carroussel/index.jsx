@@ -16,7 +16,7 @@ function Carroussel({ pictures }) {
 
   if (pictures.length > 1) {
     return (
-      <div className="carrousselBackground">
+      <div className="carrousel">
         <button
           onClick={() =>
             idPicture === 0
@@ -24,9 +24,17 @@ function Carroussel({ pictures }) {
               : updateId(idPicture - 1)
           }
         >
-          <img className="arrowLeft" src={arrowLeft} alt="Précedent" />
+          <img
+            className="carrousel__icon--left"
+            src={arrowLeft}
+            alt="Précedent"
+          />
         </button>
-        <img className="picture" src={pictures[idPicture]} alt="Images" />
+        <img
+          className="carrousel__img"
+          src={pictures[idPicture]}
+          alt="Images"
+        />
         <button
           onClick={() =>
             idPicture === pictures.length - 1
@@ -34,18 +42,26 @@ function Carroussel({ pictures }) {
               : updateId(idPicture + 1)
           }
         >
-          <p className="number">
+          <p className="carrousel__copy">
             {idPicture + 1}/{pictures.length}
           </p>
-          <img className="arrowRight" src={arrowRight} alt="Suivant" />
+          <img
+            className="carrousel__icon--right"
+            src={arrowRight}
+            alt="Suivant"
+          />
         </button>
       </div>
     );
   } else {
     return (
-      <div className="carrousselBackground">
-        <img className="picture" src={pictures[idPicture]} alt="coucou" />
-        <p className="number">1/1</p>
+      <div className="carrousel">
+        <img
+          className="carrousel__img"
+          src={pictures[idPicture]}
+          alt="coucou"
+        />
+        <p className="carrousel__copy">1/1</p>
       </div>
     );
   }
