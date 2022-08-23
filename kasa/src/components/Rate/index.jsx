@@ -16,7 +16,13 @@ function Rate({ rating }) {
     i < rating ? starsArray.push(starFull) : starsArray.push(starEmpty);
   }
 
-  return <div className="rate__copy">{starsArray}</div>;
+  return (
+    <ul className="rate__copy">
+      {starsArray.map((star, index) => (
+        <li key={index}>{star}</li>
+      ))}
+    </ul>
+  );
 }
 
 export default Rate;
