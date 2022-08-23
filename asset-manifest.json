@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/P11---Kasa/static/css/main.74c6bca6.css",
+    "main.css": "/P11---Kasa/static/css/main.718cb4ac.css",
     "main.js": "/P11---Kasa/static/js/main.2cea94c4.js",
     "static/media/banner_Home.png": "/P11---Kasa/static/media/banner_Home.57a4b5241d57e1fe67e5.png",
     "static/media/banner_aPropos.png": "/P11---Kasa/static/media/banner_aPropos.3ad6817911bc70c531da.png",
     "index.html": "/P11---Kasa/index.html",
     "static/media/star_empty.svg": "/P11---Kasa/static/media/star_empty.5ff2493a0a3e5d95fa8aa39332ca25b2.svg",
     "static/media/star_full.svg": "/P11---Kasa/static/media/star_full.9b03bd042fdc5c38d16f8b06025d416c.svg",
-    "main.74c6bca6.css.map": "/P11---Kasa/static/css/main.74c6bca6.css.map",
+    "main.718cb4ac.css.map": "/P11---Kasa/static/css/main.718cb4ac.css.map",
     "main.2cea94c4.js.map": "/P11---Kasa/static/js/main.2cea94c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.74c6bca6.css",
+    "static/css/main.718cb4ac.css",
     "static/js/main.2cea94c4.js"
   ]
 }
