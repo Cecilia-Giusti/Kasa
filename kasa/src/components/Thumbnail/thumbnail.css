@@ -34,8 +34,8 @@
         width: 340px;
         height: 340px;
         border-radius: 10px;
-        -o-object-fit: card__img;
-           object-fit: card__img;}
+        -o-object-fit: cover;
+           object-fit: cover;}
 
         .card__title{
             color: white;
