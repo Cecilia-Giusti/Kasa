@@ -43,7 +43,7 @@ function App() {
           <APropos />
         </Route>
         <Route>
-          <Error />
+          <Error path="*" />
         </Route>
       </Switch>
       <Footer />
