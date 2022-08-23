@@ -17,7 +17,9 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(`./P11---Kasa/data/data.json`);
+        const response = await fetch(
+          `https://raw.githubusercontent.com/Cecilia-Giusti/P11---Kasa/gh-pages/data/data.json`
+        );
         const accomodationData = await response.json();
         setData(accomodationData);
       } catch (err) {
