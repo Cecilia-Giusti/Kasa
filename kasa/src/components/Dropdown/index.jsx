@@ -50,7 +50,7 @@ function Dropdown({ type, titre, content, page }) {
       </button>
     </div>
   ) : (
-    <div className="dropdown--fullDropdown" $fullDropdown>
+    <div className="dropdown--fullDropdown">
       <button
         className="dropdown__button--fullDropdown"
         onClick={() => setIsClose(false)}
