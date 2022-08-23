@@ -1,17 +1,7 @@
 import Banner from "../../components/Banner";
 import Dropdown from "../../components/Dropdown";
 import bannerApropos from "../../assets/banner_aPropos.png";
-import styled from "styled-components";
-
-const Section = styled.section`
-  @media all {
-    margin-top: 31px;
-  }
-
-  @media (max-width: 400px) {
-    margin-top: 19px;
-  }
-`;
+import "./aPropos.css";
 
 /** Création de la page A propos
  * @return {JSX.Element}
@@ -43,7 +33,7 @@ function APropos() {
   return (
     <main>
       <Banner image={bannerApropos} type="APropos" />
-      <Section>
+      <section className="section">
         {sectionApropos.map(({ title, content }) => (
           <Dropdown
             key={`${title}`}
@@ -53,7 +43,7 @@ function APropos() {
             page="Apropos"
           />
         ))}
-      </Section>
+      </section>
     </main>
   );
 }

@@ -1,0 +1,136 @@
+
+@media all {
+    .contentDropdown{
+        width: 47.18%;
+    }
+
+    .contentDropdownFullDropdown{
+        width:82.5%; 
+        margin:auto; 
+        padding-bottom:33px
+    }
+
+    .contentDropdownClose{
+        width: 47.18%;
+        height: 300px;
+    }
+
+    .contentDropdownCloseFullDropdown{
+        width:82.5%;
+        height:inherit;
+        margin:auto;
+        padding-bottom:31px;
+    }
+
+    .button, .buttonFullDropdown{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #FF6060;
+        color: white;
+        height: 52px;
+        border-radius: 10px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        z-index: 50;
+        position: relative;
+    }
+
+    .buttonFullDropdown{
+        font-size: 24px
+    }
+
+    .description{
+        min-height: 249px;
+        border-radius: 10px;
+        position: relative;
+        top: -10px;
+        background-color: #F7F7F7;
+        z-index: 40;
+    }
+
+    .paragraphe, .paragrapheFullDropdown{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 30px 20px;
+        color: #FF6060;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.6%;
+    }
+
+    .paragrapheFullDropdown{
+        font-size: 24px
+    }
+
+    .liste{
+        min-height: 249px;
+        border-radius: 10px;
+        position: relative;
+        top: -10px;
+        background-color: #F7F7F7;
+        z-index: 40;
+        list-style: none;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.6%;
+        color:#FF6060;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contentDropdown{
+        width: 100%;
+    }
+
+    .contentDropdownFullDropdown{
+        padding-bottom:20px  
+    }
+
+    .contentDropdownClose{
+        width: 100%;
+        height: inherit;
+    }
+
+    .contentDropdownCloseFullDropdown{
+        padding-bottom:20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .button{
+        font-size: 13px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .button img {
+        width: 19px;
+        height: 19px;
+    }
+
+    .description{
+        min-height: 144px;
+    }
+
+    .paragraphe{ 
+        font-size: 12px;
+        padding: 23px 20px;}
+
+    .liste{
+        font-size: 12px;
+        min-height: 144px;
+        padding: 23px 20px;
+    }
+}

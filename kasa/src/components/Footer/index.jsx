@@ -1,57 +1,19 @@
 import logo_footer from "../../assets/logo_footer.png";
-import styled from "styled-components";
-
-const FooterStyle = styled.footer`
-  @media all {
-    background-color: black;
-    width: 100%;
-    height: 209px;
-    color: white;
-    font-size: 24px;
-    line-height: 142.6%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-  }
-`;
-
-const LogoFooter = styled.img`
-  @media all {
-    width: 122px;
-    height: 39.44px;
-  }
-`;
-
-const Paragraphe = styled.p`
-  @media all {
-    font-family: "Montserrat", Arial, "Sans-serif";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 142.6%;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 16px;
-  }
-
-  @media (max-width: 375px) {
-    font-size: 12px;
-    margin-top: 20px;
-  }
-`;
+import "./footer.css";
 
 /** Création du footer
  * @return {JSX.Element}
  */
 function Footer() {
   return (
-    <FooterStyle>
-      <LogoFooter src={logo_footer} alt=" Logo de Kasa dans le pied de page" />
-      <Paragraphe>© 2020 Kasa. All rights reserved</Paragraphe>
-    </FooterStyle>
+    <footer className="footerStyle">
+      <img
+        className="logoFooter"
+        src={logo_footer}
+        alt=" Logo de Kasa dans le pied de page"
+      />
+      <p className="paragraphe">© 2020 Kasa. All rights reserved</p>
+    </footer>
   );
 }
 

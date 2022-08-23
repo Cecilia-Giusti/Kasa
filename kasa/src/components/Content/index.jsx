@@ -1,26 +1,7 @@
 import Tag from "../Tag";
 import Rate from "../Rate";
 import Dropdown from "../Dropdown";
-import styled from "styled-components";
-
-const TagsAndRating = styled.div`
-  display: flex;
-  justify-content: space-between;
-  marin-top: 20px;
-  margin-bottom: 20px;
-`;
-
-const Tags = styled.div`
-  display: flex;
-  gap: 10px;
-  justify-content: flex-start;
-`;
-
-const DropdownFlex = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-`;
+import "./content.css";
 
 /** Contenu de la page d'une location, tags, note, description et equipements
  * @param {string} id - id du bien
@@ -33,15 +14,15 @@ const DropdownFlex = styled.div`
 function Content({ id, tagsArray, rateNumber, description, equipment }) {
   return (
     <section>
-      <TagsAndRating>
-        <Tags>
+      <div className="tagsAndRating">
+        <div className="tags">
           {tagsArray.map((tagName) => (
             <Tag key={`${tagName}-${id}`} tag={tagName} />
           ))}
-        </Tags>
+        </div>
         <Rate rating={rateNumber} />
-      </TagsAndRating>
-      <DropdownFlex>
+      </div>
+      <div className="dropdownFlex">
         <Dropdown
           type="Paragraphe"
           titre="Description"
@@ -54,7 +35,7 @@ function Content({ id, tagsArray, rateNumber, description, equipment }) {
           page="Home"
           content={equipment}
         />
-      </DropdownFlex>
+      </div>
     </section>
   );
 }

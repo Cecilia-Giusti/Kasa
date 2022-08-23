@@ -1,0 +1,216 @@
+@media all {
+    .sectionHome {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 25px;
+        position: relative;
+    }
+
+.sectionHome:before {
+    content: "";
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    }
+
+    .sectionApropos{  
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 25px;
+        position: relative;
+    }
+
+    .sectionApropos:before {
+        content: "";
+        width: 100%;
+        background-color: black;
+        border-radius: 25px;
+        mix-blend-mode: darken;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 50;
+    }  
+
+    .imageHome{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: -700px;
+        -o-object-fit: contain;
+            object-fit: contain;
+    }
+
+    .imageApropos {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: -250px;
+        -o-object-fit: contain;
+            object-fit: contain;
+    }
+
+    .slogan {
+        font-size: 48px;
+        line-height: 142.6%;
+        color: white;
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        z-index: 60;
+    }
+}
+
+@media (max-width: 1440px) {
+    .sectionHome {
+        height: 223px;  
+    } 
+
+    .sectionApropos{  
+        height: 223px;}
+    }
+
+@media (max-width: 1300px) {
+    .slogan {
+        left: 20%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slogan {
+        left: 15%;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .slogan {
+        left: 20%;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .slogan {
+        left: 15%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .imageHome{
+        top: -500px;
+    }
+
+    .imageApropos {
+        top: -150px;
+    }
+
+    .slogan {
+        left: 15%;
+        font-size: 36px;
+    }
+}  
+
+@media (max-width: 800px) {
+    .imageHome{
+        top: -300px;
+    }
+
+    .imageApropos {
+        top: -100px;
+    }
+
+    .slogan {
+        top: 37%;
+        left: 20%;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .slogan {
+        left: 10%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .sectionHome {
+        height: 111px;
+        border-radius: 10px;
+        margin-top: 20px;
+}
+
+    .sectionHome:before {
+        border-radius: 10px;
+    }   
+
+    .sectionApropos{  
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    .sectionApropos:before {
+        border-radius: 10px;
+    }    
+
+    .imageHome{
+        top: -200px;
+    }
+
+    .imageApropos {
+        top: 0;
+    }
+
+    .slogan {
+        left: 10%;
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .slogan {
+        font-size: 24px;
+        line-height: 100%;
+        top: 30%;
+        left: 8%;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sectionApropos{  
+        width: 336px;
+        height: 223px;
+}
+
+    .imageApropos {
+        width: 336px;
+        height: 223px;
+        }
+}
+
+
+

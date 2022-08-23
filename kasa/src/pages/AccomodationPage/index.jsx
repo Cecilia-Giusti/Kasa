@@ -3,53 +3,10 @@ import Carroussel from "../../components/Carroussel";
 import Title from "../../components/Title";
 import Host from "../../components/Host";
 import Content from "../../components/Content";
-import styled from "styled-components";
 import Tag from "../../components/Tag";
 import Rate from "../../components/Rate";
 import Dropdown from "../../components/Dropdown";
-
-const SectionPresentation = styled.section`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 23px;
-`;
-
-const Tags = styled.div`
-  @media all {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-start;
-  }
-
-  @media (max-width: 600px) {
-    flex-wrap: wrap;
-    row-gap: 10px;
-
-    margin-top: 10px;
-  }
-`;
-
-const DropdownFlex = styled.div`
-  @media all {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    gap: 20px;
-  }
-`;
-
-const RateAndHost = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-  margin-top: 16px;
-`;
+import "./accomodationPage.css";
 
 /** Création d'une page d'un bien
  * @param {array} accomodationData - Tableau des biens
@@ -64,7 +21,7 @@ function AccomodationPage({ accomodationData }) {
   return window.screen.width > 600 ? (
     <main>
       <Carroussel pictures={accomodation.pictures} />
-      <SectionPresentation>
+      <section className="sectionPresentation">
         <Title
           titleAccomodation={accomodation.title}
           location={accomodation.location}
@@ -73,7 +30,7 @@ function AccomodationPage({ accomodationData }) {
           nameHost={accomodation.host.name}
           pictureHost={accomodation.host.picture}
         />
-      </SectionPresentation>
+      </section>
       <section>
         <Content
           id={accomodation.id}
@@ -91,19 +48,19 @@ function AccomodationPage({ accomodationData }) {
         titleAccomodation={accomodation.title}
         location={accomodation.location}
       />
-      <Tags>
+      <div className="tags">
         {accomodation.tags.map((tagName) => (
           <Tag key={`${tagName}-${accomodation.id}`} tag={tagName} />
         ))}
-      </Tags>
-      <RateAndHost>
+      </div>
+      <div className="rateAndHost">
         <Rate rating={accomodation.rating} />
         <Host
           nameHost={accomodation.host.name}
           pictureHost={accomodation.host.picture}
         />
-      </RateAndHost>
-      <DropdownFlex>
+      </div>
+      <div className="dropdownFlex">
         <Dropdown
           type="Paragraphe"
           titre="Description"
@@ -116,7 +73,7 @@ function AccomodationPage({ accomodationData }) {
           content={accomodation.equipments}
           page="Home"
         />
-      </DropdownFlex>
+      </div>
     </main>
   );
 }

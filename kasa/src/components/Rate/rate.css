@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+    .rating{
+    width: 98px;
+    height: 18px;
+    }
+
+    .rating img {
+      width: 18px;
+    }
+
+}

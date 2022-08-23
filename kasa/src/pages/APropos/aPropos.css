@@ -1,0 +1,11 @@
+
+  @media all {
+    .section{
+    margin-top: 31px;}
+  }
+
+  @media (max-width: 400px) {
+    .section{
+    margin-top: 19px;
+  }
+}
