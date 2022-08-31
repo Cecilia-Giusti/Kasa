@@ -1,6 +1,6 @@
 import arrowRight from "../../assets/arrowRight.png";
 import arrowLeft from "../../assets/arrowLeft.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./carroussel.css";
 
 /** Banniere avec une image
@@ -9,10 +9,6 @@ import "./carroussel.css";
  */
 function Carroussel({ pictures }) {
   const [idPicture, updateId] = useState(0);
-
-  useEffect(() => {
-    document.Picture = pictures[idPicture];
-  });
 
   if (pictures.length > 1) {
     return (
