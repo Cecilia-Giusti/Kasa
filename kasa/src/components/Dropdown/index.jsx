@@ -11,20 +11,20 @@ import "./dropdown.css";
  * @return {JSX.Element}
  */
 function Dropdown({ type, titre, content, page }) {
-  const [isClose, setIsClose] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   return page === "Home" ? (
-    !isClose ? (
+    !isOpen ? (
       <div className="dropdown--close">
-        <button className="dropdown__button" onClick={() => setIsClose(true)}>
+        <button className="dropdown__button" onClick={() => setIsOpen(true)}>
           <p>{titre}</p>
           <img src={arrowOpen} alt="Ouvrir" />
         </button>
       </div>
     ) : (
       <div className="dropdown">
-        <button className="dropdown__button" onClick={() => setIsClose(false)}>
+        <button className="dropdown__button" onClick={() => setIsOpen(false)}>
           <p>{titre}</p>
-          <img src={arrowClosed} alt="Ouvrir" />
+          <img src={arrowClosed} alt="Fermer" />
         </button>
         {type === "Paragraphe" ? (
           <div className="dropdown__body">
@@ -39,11 +39,11 @@ function Dropdown({ type, titre, content, page }) {
         )}
       </div>
     )
-  ) : !isClose ? (
+  ) : !isOpen ? (
     <div className="dropdown--close--fullDropdown">
       <button
         className="dropdown__button--fullDropdown"
-        onClick={() => setIsClose(true)}
+        onClick={() => setIsOpen(true)}
       >
         <p>{titre}</p>
         <img src={arrowOpen} alt="Ouvrir" />
@@ -53,10 +53,10 @@ function Dropdown({ type, titre, content, page }) {
     <div className="dropdown--fullDropdown">
       <button
         className="dropdown__button--fullDropdown"
-        onClick={() => setIsClose(false)}
+        onClick={() => setIsOpen(false)}
       >
         <p>{titre}</p>
-        <img src={arrowClosed} alt="Ouvrir" />
+        <img src={arrowClosed} alt="Fermer" />
       </button>
 
       <div className="dropdown__body">
