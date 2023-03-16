@@ -1,0 +1,37 @@
+@media all {
+.host__section{
+  display: flex;
+  align-items: center;
+  gap: 10px;}
+
+  .host__title{
+    font-family: "Montserrat", "Arial", "Sans-serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    width: 93px;
+    height: 52px;
+    color: #FF6060;
+    text-align: end;}
+
+    .host__img{
+        width: 64px;
+        height: 64px;
+        border-radius: 50px;}
+
+}
+
+  @media (max-width: 375px) {
+    .host__title{
+    font-size: 12px;
+    width: 50px;
+    max-height: 33px;
+  }
+
+  .host__img{
+    width: 32px;
+    height: 32px;
+  }
+}
+
