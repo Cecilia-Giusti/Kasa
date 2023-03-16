@@ -8,7 +8,9 @@ import "./header.css";
 function Header() {
   return (
     <header>
+      <Link to='/Kasa'>
       <img className='header__img' src={logo} alt=' Logo de Kasa' />
+      </Link>
       <nav>
         <ul className='header__list'>
           <Link to='/Kasa'>
