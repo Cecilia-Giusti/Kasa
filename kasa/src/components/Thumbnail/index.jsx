@@ -9,10 +9,10 @@ import "./thumbnail.css";
  */
 function Thumbnail({ id, title, cover }) {
   return (
-    <Link to={`/P11---Kasa/logement/${id}`}>
-      <article className="card">
-        <img className="card__img" src={cover} alt={title} />
-        <h2 className="card__title">{title}</h2>
+    <Link to={`/Kasa/logement/${id}`}>
+      <article className='card'>
+        <img className='card__img' src={cover} alt={title} />
+        <h2 className='card__title'>{title}</h2>
       </article>
     </Link>
   );

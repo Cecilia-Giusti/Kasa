@@ -24,7 +24,7 @@ function AccomodationPage({ accomodationData }) {
     return window.screen.width > 600 ? (
       <main>
         <Carroussel pictures={accomodation.pictures} />
-        <section className="presentation__section">
+        <section className='presentation__section'>
           <Title
             titleAccomodation={accomodation.title}
             location={accomodation.location}
@@ -51,36 +51,36 @@ function AccomodationPage({ accomodationData }) {
           titleAccomodation={accomodation.title}
           location={accomodation.location}
         />
-        <div className="tags__section--accomodation">
+        <div className='tags__section--accomodation'>
           {accomodation.tags.map((tagName) => (
             <Tag key={`${tagName}-${accomodation.id}`} tag={tagName} />
           ))}
         </div>
-        <div className="rateAndHost__section--accomodation">
+        <div className='rateAndHost__section--accomodation'>
           <Rate rating={accomodation.rating} />
           <Host
             nameHost={accomodation.host.name}
             pictureHost={accomodation.host.picture}
           />
         </div>
-        <div className="dropdown__section--accomodation">
+        <div className='dropdown__section--accomodation'>
           <Dropdown
-            type="Paragraphe"
-            titre="Description"
+            type='Paragraphe'
+            titre='Description'
             content={accomodation.description}
-            page="Home"
+            page='Home'
           />
           <Dropdown
-            type="Liste"
-            titre="Équipements"
+            type='Liste'
+            titre='Équipements'
             content={accomodation.equipments}
-            page="Home"
+            page='Home'
           />
         </div>
       </main>
     );
   } else {
-    return <Redirect path="/P11---Kasa" />;
+    return <Redirect path='/Kasa' />;
   }
 }
 

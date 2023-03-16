@@ -8,14 +8,14 @@ import "./header.css";
 function Header() {
   return (
     <header>
-      <img className="header__img" src={logo} alt=" Logo de Kasa" />
+      <img className='header__img' src={logo} alt=' Logo de Kasa' />
       <nav>
-        <ul className="header__list">
-          <Link to="/P11---Kasa">
-            <li className="header__item">Accueil</li>
+        <ul className='header__list'>
+          <Link to='/Kasa'>
+            <li className='header__item'>Accueil</li>
           </Link>
-          <Link to="/P11---Kasa/a_propos">
-            <li className="header__item">A propos</li>
+          <Link to='/Kasa/a_propos'>
+            <li className='header__item'>A propos</li>
           </Link>
         </ul>
       </nav>
