@@ -18,7 +18,7 @@ function App() {
     async function fetchData() {
       try {
         const response = await fetch(
-          `https://raw.githubusercontent.com/Cecilia-Giusti/P11---Kasa/gh-pages/data/data.json`
+          `https://raw.githubusercontent.com/Cecilia-Giusti/Kasa/gh-pages/data/data.json`
         );
         const accomodationData = await response.json();
         setData(accomodationData);
@@ -33,17 +33,17 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/P11---Kasa">
+        <Route exact path='/Kasa'>
           <Home accomodationData={accomodationData} />
         </Route>
-        <Route path="/P11---Kasa/logement/:idAccomodation">
+        <Route path='/Kasa/logement/:idAccomodation'>
           <AccomodationPage accomodationData={accomodationData} />
         </Route>
-        <Route exact path="/P11---Kasa/a_propos">
+        <Route exact path='/Kasa/a_propos'>
           <APropos />
         </Route>
         <Route>
-          <Error path="*" />
+          <Error path='*' />
         </Route>
       </Switch>
       <Footer />
